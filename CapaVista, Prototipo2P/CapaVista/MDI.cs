@@ -16,5 +16,17 @@ namespace CapaVista
         {
             InitializeComponent();
         }
+
+        private void miMaestros_Click(object sender, EventArgs e)
+        {
+            Form frm = new MantenimientoMaestros();
+            frm.Show();
+        }
+
+        private void miAlumnos_Click(object sender, EventArgs e)
+        {
+            Form frm = new Mantenimiento_Alumnos();
+            frm.Show();
+        }
     }
 }

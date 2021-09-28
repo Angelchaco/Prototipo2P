@@ -35,6 +35,8 @@
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miMaestros = new System.Windows.Forms.ToolStripMenuItem();
+            this.miAlumnos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +58,9 @@
             // 
             // abrirToolStripMenuItem
             // 
+            this.abrirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miMaestros,
+            this.miAlumnos});
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.abrirToolStripMenuItem.Text = "Abrir";
@@ -90,6 +95,20 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
+            // miMaestros
+            // 
+            this.miMaestros.Name = "miMaestros";
+            this.miMaestros.Size = new System.Drawing.Size(275, 24);
+            this.miMaestros.Text = "Mantenimiento Maestros";
+            this.miMaestros.Click += new System.EventHandler(this.miMaestros_Click);
+            // 
+            // miAlumnos
+            // 
+            this.miAlumnos.Name = "miAlumnos";
+            this.miAlumnos.Size = new System.Drawing.Size(275, 24);
+            this.miAlumnos.Text = "Mantenimiento Alumnos";
+            this.miAlumnos.Click += new System.EventHandler(this.miAlumnos_Click);
+            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,5 +134,7 @@
         private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miMaestros;
+        private System.Windows.Forms.ToolStripMenuItem miAlumnos;
     }
 }
